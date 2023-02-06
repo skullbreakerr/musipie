@@ -1,3 +1,3 @@
 # musipie
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/js-d9pksx)
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/musipie.stackblitz.io)
