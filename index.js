@@ -33,15 +33,10 @@ const submit = document.getElementById('sub_btn');
 
 function validation() {
   let nameregx = /^[a-zA-Z]+$/;
-  let email = /^[a-zA-Z)0-9]+@\(gmail|yahoo|outlook)\.com$/;
   let username = /^[a-zA-Z)-9]{5,}$/;
 
   if (nameregx.test(name.value)) {
     alert('Error occured!');
-    return false;
-  }
-  if (email.test(email.value)) {
-    alert('Error in Email');
     return false;
   }
   if (username.test(username.value)) {
