@@ -58,3 +58,10 @@ input {
   color: #976dd1;
   border-color: #976dd0;
 }
+
+.box {
+  border: #8190a5 solid;
+  align-items: center;
+  align-content: center;
+  padding: 5% 5% 5% 5%;
+}
