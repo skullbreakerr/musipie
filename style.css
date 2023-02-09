@@ -1,22 +1,22 @@
 @font-face {
   font-family: myfonts;
-  src: url('https://firebasestorage.googleapis.com/v0/b/skull-candy-48fae.appspot.com/o/Chewy-Regular.ttf?alt=media&token=59d30b3f-48a3-4707-991a-8ec59894419a');
-}
-h2 {
-  font-size: 28px;
-}
-
-h3 {
-  font-family: Verdana;
-}
-.titl {
-  font-family: myfonts;
-  align-content: center;
-  text-align: center;
+  src: url('https://firebasestorage.googleapis.com/v0/b/skull-candy-48fae.appspot.com/o/Chewy-Regular.ttf?alt=media&token=59d30b3f-48a3-4707-991a-8ec59894419a')
+    format('ttf');
 }
 .header {
-  align-content: center;
+  color: #848E9A;
+  font-family: Chewy;
+  font-size: 55px;
+  line-height: 50px;
+  width: 565px;
   text-align: center;
+}
+h2 {
+  font-family: myfonts;
+  font-size: 28px;
+}
+h3 {
+  font-family: Verdana;
 }
 div {
   display: flex;
@@ -35,7 +35,7 @@ input {
   justify-content: center;
   display: flex;
   align-items: center;
-  border: #8190a5 solid 1px;
+  border: #8190a5 solid 2px;
 }
 
 .sub_btn {
@@ -57,11 +57,4 @@ input {
 .formcontrol:hover {
   color: #976dd1;
   border-color: #976dd0;
-}
-
-.box {
-  border: #8190a5 solid;
-  align-items: center;
-  align-content: center;
-  padding: 5% 5% 5% 5%;
 }
