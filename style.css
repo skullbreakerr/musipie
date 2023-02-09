@@ -1,6 +1,6 @@
 @font-face {
-  font-family: chewy;
-  src: url(https://fonts.google.com/share?selection.family=Chewy);
+  font-family: myfonts;
+  src: url('https://firebasestorage.googleapis.com/v0/b/skull-candy-48fae.appspot.com/o/Chewy-Regular.ttf?alt=media&token=59d30b3f-48a3-4707-991a-8ec59894419a');
 }
 h2 {
   font-size: 28px;
@@ -10,7 +10,7 @@ h3 {
   font-family: Verdana;
 }
 .titl {
-  font-family: chewy;
+  font-family: myfonts;
   align-content: center;
   text-align: center;
 }
