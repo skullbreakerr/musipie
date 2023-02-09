@@ -1,9 +1,60 @@
-h1,
+@font-face {
+  font-family: chewy;
+  src: url(https://fonts.google.com/share?selection.family=Chewy);
+}
 h2 {
-  font-family: Lato;
+  font-size: 28px;
+}
+
+h3 {
+  font-family: Verdana;
+}
+.titl {
+  font-family: chewy;
+  align-content: center;
+  text-align: center;
+}
+.header {
+  align-content: center;
+  text-align: center;
 }
 div {
+  display: flex;
+  justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100vh;
+}
+input {
+  align-items: center;
+  margin-bottom: 5%;
+}
+.formcontrol {
+  height: 50px;
+  width: 200px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border: #8190a5 solid 1px;
+}
+
+.sub_btn {
+  color: white;
+  background-color: #976dd0;
+  border: white 2px solid;
+  height: 50px;
+  width: 210px;
+}
+
+.sub_btn:hover {
+  color: #976dd0;
+  background-color: white;
+  border-color: #976dd0;
+  border-style: solid;
+  transition-duration: 0.5s;
+}
+
+.formcontrol:hover {
+  color: #976dd1;
+  border-color: #976dd0;
 }
