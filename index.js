@@ -6,13 +6,13 @@ import { initializeApp } from 'firebase/app';
 
 // Your web app's Firebase configuration
 
-import { getfirestore, collection, addDoc } from 'firebase/firestore';
+import { getFirestore, collection, addDoc } from 'firebase/firestore';
 
 const name = document.getElementById('nameInp');
 const email = document.getElementById('emailInp');
 const username = document.getElementById('userInp');
 const pass = document.getElementById('passInp');
-const submit = document.getElementById('submit');
+const submit = document.getElementById('sub_bt');
 
 async function main() {
   const firebaseConfig = {
@@ -28,8 +28,8 @@ async function main() {
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
 
-  const db = getfirestore(app);
-  submit.addEventListener('click', RegisterUser);
+  const db = getFirestore(app);
+  submit.addEventListener('click', RegisterUser(db));
   return true;
 }
 
@@ -56,7 +56,7 @@ function Validation() {
   return true;
 }
 
-function RegisterUser() {
+function RegisterUser(db) {
   if (Validation()) {
     return;
   }
