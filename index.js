@@ -6,7 +6,7 @@ import { initializeApp } from 'firebase/app';
 
 // Your web app's Firebase configuration
 
-import { getfirestore, child, ref, set } from 'firebase/firestore';
+import { getfirestore, collection, addDoc } from 'firebase/firestore';
 
 const name = document.getElementById('nameInp');
 const email = document.getElementById('emailInp');
@@ -59,24 +59,15 @@ function RegisterUser() {
   if (Validation()) {
     return;
   }
-  const dbRef = ref(db);
-
-  get(child(dbRef, 'UserList/' + username.value)).then((snapshot) => {
-    if (snapshot.exist()) {
-      alert('Account already Exist!');
-    } else {
-      set(ref(db, 'UserList/' + username.value), {
-        fullname: name.value,
-        email: email.value,
-        username: username.value,
-        password: pass.value,
-      })
-        .then(() => {
-          alert('User added sucessfully !!');
-        })
-        .catch((error) => {
-          alert('Error: ' + error);
-        });
-    }
-  });
+  try {
+    const docRef = await addDoc(collection(db, 'users'), {
+      fullname: name.value,
+      email: email.value,
+      username: username.value,
+      password: pass.value,
+    });
+    console.log('Document written with ID: ', docRef.id);
+  } catch (e) {
+    console.error('Error adding document: ', e);
+  }
 }
