@@ -25,9 +25,10 @@ async function main() {
     messagingSenderId: '757603856879',
     appId: '1:757603856879:web:990480f0446a513a7d461a',
   };
-  const db = getfirestore(app);
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
+
+  const db = getfirestore(app);
   submit.addEventListener('click', RegisterUser);
   return true;
 }
