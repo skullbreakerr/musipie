@@ -57,23 +57,24 @@ async function main() {
 }
 
 main();
-function Validation() {
-  let nameregex = /^[a-zA-Z]+$/;
-  let emailregex = /^[a-zA-Z0-9]+@(gmail|yahoo|outlook)\.com$/;
-  let userregex = /^[a-zA-Z0-9]{5,}$/;
+// function Validation() {
+//   let nameregex = /^[a-zA-Z]+$/;
+//   let emailregex = /^[a-zA-Z0-9]+@(gmail|yahoo|outlook)\.com$/;
+//   let userregex = /^[a-zA-Z0-9]{5,}$/;
 
-  if (!nameregex.test(name)) {
-    alert('the name should only contains alphabets');
-    return false;
-  }
-  if (!emailregex.test(email)) {
-    alert('the email is not valid');
-    return false;
-  }
-  if (!userregex.test(username)) {
-    alert('the username is not valid');
-    return false;
-  }
+//   if (!nameregex.test(name)) {
+//     alert('the name should only contains alphabets');
+//     return false;
+//   }
+//   if (!emailregex.test(email)) {
+//     alert('the email is not valid');
+//     return false;
+//   }
+//   if (!userregex.test(username)) {
+//     alert('the username is not valid');
+//     return false;
+//   }
 
-  return true;
-}
+//   return true;
+// }
+

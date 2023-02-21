@@ -1,99 +1,13 @@
-@media all and (min-width: 1200px) {
-  #app {
-    max-width: auto;
-    margin: 0 auto;
-  }
-  body {
-    background-image: url('https://firebasestorage.googleapis.com/v0/b/skull-candy-48fae.appspot.com/o/wallpaperflare.com_wallpaper.jpg?alt=media&token=76d4f73c-decb-42b4-b3e7-abdbce03c64c');
-    background-size: cover;
-    background-position: center;
-    image-rendering: unset;
-    image-resolution: inherit;
-  }
+.nav-link {
+  display: inline;
 }
-@media all and (min-width: 960px) and (max-width: 1199px) {
-  #app {
-    max-width: auto;
-    margin: 0 auto;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-  }
-  body {
-    background-color: whitesmoke;
-  }
+.nav-pills {
+  border-radius: 4px;
 }
-@font-face {
-  font-family: Chewy;
-  src: url('https://firebasestorage.googleapis.com/v0/b/skull-candy-48fae.appspot.com/o/Chewy-Regular.ttf?alt=media&token=59d30b3f-48a3-4707-991a-8ec59894419a')
-    format('ttf');
+.nav-fill{
+  padding: 5px;
+  
 }
-
-.header {
-  color: #848e9a;
-  font-family: Chewy;
-  font-size: 55px;
-  line-height: 50px;
-  text-align: center;
-}
-
-.icon {
-  margin-right: 1%;
-  height: 64px;
-  width: 64px;
-}
-.box {
-  margin-top: 9%;
-  text-align: center;
-}
-h2 {
-  font-family: chewy;
-  font-size: 28px;
-}
-h3 {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin-bottom: 3%;
-  font-size: 25px;
-  font-weight: 100;
-}
-div {
-  justify-content: center;
-}
-input {
-  align-items: center;
-  margin-bottom: 1%;
-  text-align: center;
-}
-.formcontrol {
-  height: 50px;
-  width: 200px;
-  justify-content: center;
-  align-items: center;
-  border: #8190a5 solid 2px;
-  opacity: 60%;
-}
-
-.sub_btn {
-  color: white;
-  background-color: #976dd0;
-  border: #8190a5 solid 2px;
-  margin-top: 2%;
-  margin-bottom: 5%;
-  height: 50px;
-  width: 210px;
-}
-
-.sub_btn:hover {
-  color: #976dd0;
-  background-color: white;
-  border-color: #976dd0;
-  border-style: solid;
-  transition-duration: 0.5s;
-}
-
-.formcontrol:hover {
-  color: #976dd1;
-  border-color: #976dd0;
-  opacity: 80%;
+.vr{
+  color: black solid;
 }
