@@ -1,13 +1,67 @@
-.nav-link {
-  display: inline;
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+body {
+  background-color:  #1f1f1f;
 }
-.nav-pills {
-  border-radius: 4px;
+body::after{
+  background-color:  rgb(232, 187, 243);
+  transition-delay: 1s;
 }
-.nav-fill{
-  padding: 5px;
-  
+#head {
+  font-family: 'Chewy', cursive;
+  font-size: xx-large;
+  text-align: center;
+  padding-bottom: 4px;
+  display: flex;
 }
-.vr{
-  color: black solid;
+
+.vr {
+  color: black;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding: 2px;
+}
+.btn {
+  background-color: rgba(149, 47, 245, 0.877);
+  height: 40px;
+  color: #ffffff;
+  align-items: center;
+  border: 1px solid #1f1f1f;
+  text-align: center;
+}
+.btn:hover {
+  border-radius: 15px;
+  border-style: ridge;
+  border-color: rgba(149, 47, 245, 0.877);
+  color: #1f1f1f;
+  transition: 1s;
+}
+.text-center {
+  padding-top: 14px;
+}
+div ul {
+  display: flex;
+}
+
+#head img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  margin-left: 14px;
+}
+
+div .bg{
+  border-radius: 12px;
+  background-color: rgba(149, 47, 245, 0.877);
+  color: #ffffff;
+  display: flex;
+  padding-left: 15px;
+  padding-bottom: 2px;
+  margin-top: auto;
+}
+
+#card-container img{
+  height: 300px;
+  width: max; 
+
 }
