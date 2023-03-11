@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 
+
 body {
   background-color:  #1f1f1f;
 } 
@@ -9,7 +10,43 @@ body {
   padding-bottom: 4px;
   display: flex;
 }
- 
+#main{
+  transition: margin-left 0.5s; 
+}
+.sidebar{
+  height:100%;
+  width:0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow-x: hidden;
+  padding-top: 40px;
+  transition: 0.5s;
+  background-color: #1f1f1f;
+}
+.sidebar itm{
+  padding:8px 8px 8px 32px;
+  display: block;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  transition: 0.2s;
+}
+#border{
+  border: solid 1px;
+  border-top: #ffffff;
+  border-bottom: #ffffff;
+}
+.sidebar itm:hover{
+  color: rgba(149, 47, 245, 0.877);
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
 .vr {
   color: black;
   margin-left: 4px;
@@ -23,6 +60,16 @@ body {
   align-items: center;
   border: 1px solid #1f1f1f;
   text-align: center;
+}
+a.btn{
+  border-radius: 50px;
+  border-style: ridge;
+  background-color: rgba(149, 47, 245, 0.877);
+  color: white;
+}
+a.btn:hover{
+  color: #1f1f1f;
+  border-color: rgba(149, 47, 245, 0.877);
 }
 .btn:hover {
   border-radius: 15px;
@@ -72,6 +119,7 @@ div .bg{
   transition: transform 0.5s ease;
 }
 
-.logo:hover {
-  transform: rotate(360deg);
+.logo:hover{
+  transform: rotate3d(0,1,0,360deg);
 }
+ 

@@ -14,10 +14,10 @@
   /> 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
+<body id="main">
   <!-- header -->
-  <div class="container-l">
-  <div id="head" class="bg-light pt-2"><img src="https://firebasestorage.googleapis.com/v0/b/skull-candy-48fae.appspot.com/o/logo.png?alt=media&token=e28cd3c6-39e4-4f4d-b07f-8b8824d173df" class="logo">Musipie
+  <div class="container-l" id="main">
+  <div id="head" class="bg-light pt-2"><img src="https://firebasestorage.googleapis.com/v0/b/skull-candy-48fae.appspot.com/o/logo.png?alt=media&token=e28cd3c6-39e4-4f4d-b07f-8b8824d173df" class="logo" onclick="openbar()">Musipie
     
     <ul class="justify-content-end position-absolute top-1 end-0">
       <li class="btn nav-pills">Sign Up</li>
@@ -26,54 +26,83 @@
     </ul>
   </div>
   </div>
+  <!-- sidebar -->
+  <div class="sidebar" id="navbar">
+      <itm class=".closebtn" href="#" onclick="closebar()"><span class="material-symbols-outlined">
+      arrow_back
+      </span></itm>
+      <itm>Search</itm>
+      <itm>Categories</itm>
+      <itm>About Us</itm>
+      <itm>Setting</itm>
+  </div>
 
   <!-- content -->
-  <div class="container-fluid mt-5">
+  <div class="container-fluid mt-5" >
     <div class="h1 bg">Today's biggest hits</div>
   <hr class="line"/>
   </div>
-  <div class="container-fluid mt-5">
+  <div class="container-fluid mt-5" id="main">
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
-        <div class="card h-100">
+        <div class="card">
           <img src="https://firebasestorage.googleapis.com/v0/b/skull-candy-48fae.appspot.com/o/20230306_151035.jpg?alt=media&token=bff481d0-b517-44da-b8ff-9482390a2a85" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <a href="#" class="btn btn-primary">Play</a>
+            <h5 class="card-title">Chalo Chalein</h5>
+            <p class="card-text">Ritviz, Seedhe Maut</p>
+            <a href="#" class="btn"><span class="material-symbols-outlined">
+            play_arrow
+            </span></a>
           </div>
         </div>
       </div>
       <div class="col">
-        <div class="card h-100">
+        <div class="card">
           <img src="https://firebasestorage.googleapis.com/v0/b/skull-candy-48fae.appspot.com/o/20230306_151141.jpg?alt=media&token=e507dc31-8c8e-4a51-8361-61fe32020aa5" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a short card.</p>
-            <a href="https://firebasestorage.googleapis.com/v0/b/skull-candy-48fae.appspot.com/o/Naruto%20OST.mp3?alt=media&token=e5ecbd6d-0d15-4110-890d-866d444f8ef4" class="btn btn-primary">Play</a>
+            <h5 class="card-title">Past Lives</h5>
+            <p class="card-text">Martin Arteta, creamy, 11:11 Music group</p>
+            <a href="https://firebasestorage.googleapis.com/v0/b/skull-candy-48fae.appspot.com/o/Naruto%20OST.mp3?alt=media&token=e5ecbd6d-0d15-4110-890d-866d444f8ef4" class="btn"><span class="material-symbols-outlined">
+            play_arrow
+            </span></a>
           </div>
         </div>
       </div>
       <div class="col">
-        <div class="card h-100">
+        <div class="card">
           <img src="https://firebasestorage.googleapis.com/v0/b/skull-candy-48fae.appspot.com/o/20230306_151456.jpg?alt=media&token=e3c3281e-7c43-4d38-ba36-d029b43349ea" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Play</a>
+            <h5 class="card-title">Still Love you</h5>
+            <p class="card-text">Yoo Hwe Seung(N.Flying)</p>
+            <a href="#" class="btn"><span class="material-symbols-outlined">
+            play_arrow
+            </span></a>
           </div>
         </div>
       </div>
       <div class="col">
-        <div class="card h-100">
+        <div class="card">
           <img src="https://firebasestorage.googleapis.com/v0/b/skull-candy-48fae.appspot.com/o/20230306_151343.jpg?alt=media&token=3c7985f7-a186-4db8-9429-25af1e44677b" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <a href="#" class="btn btn-primary">Play</a>
+            <h5 class="card-title">Who We Are</h5>
+            <p class="card-text">Imagine Dragons</p>
+            <a href="#" class="btn"><span class="material-symbols-outlined">
+            play_arrow
+            </span></a>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <script> 
+  function openbar() {
+    document.getElementById("navbar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closebar() {
+    document.getElementById("navbar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+</script>
 </body>

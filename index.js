@@ -54,6 +54,7 @@ async function main() {
     return false;
   });
   alert('Sign Up Sucessfully !!');
+ 
 }
 
 main();
@@ -78,4 +79,3 @@ main();
 //   return true;
 // }
 
- 
