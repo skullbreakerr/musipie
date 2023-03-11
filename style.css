@@ -2,19 +2,14 @@
 
 body {
   background-color:  #1f1f1f;
-}
-body::after{
-  background-color:  rgb(232, 187, 243);
-  transition-delay: 1s;
-}
+} 
 #head {
   font-family: 'Chewy', cursive;
   font-size: xx-large;
-  text-align: center;
   padding-bottom: 4px;
   display: flex;
 }
-
+ 
 .vr {
   color: black;
   margin-left: 4px;
@@ -64,6 +59,11 @@ div .bg{
   height: 300px;
   width: max; 
 
+}
+
+.line{
+  color: white;
+  height: 2px;
 }
 .logo {
   width: 100px;
