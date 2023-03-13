@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
 
 
 body {
@@ -123,3 +124,9 @@ div .bg{
   transform: rotate3d(0,1,0,360deg);
 }
  
+#dev{
+  margin-top: 25px;
+  text-align: center;
+  color: green;
+  font-family: 'Rubik Iso', cursive;
+}
