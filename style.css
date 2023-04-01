@@ -175,15 +175,16 @@ div img {
 .musicpanel {
   height: 70px;
   width: 80%;
-  margin: auto;
+  margin :auto;
   color: white;
   background-color: rgba(149, 47, 245, 0.877);
   border-radius: 50px;
   position: fixed;
   bottom: 10px;
-  left: 35px;
+  left: 10%;
   display: flex;
   justify-content: center;
+  align-self: center;
   align-items: center;
   padding: 0 20px;
 }
@@ -221,7 +222,7 @@ div img {
   border-radius: 50px;
   border: 0;
   color: white;
-  margin-left: 3px;
+  margin-left: auto;
   background-color: rgba(149, 47, 245, 0.877);
   align-self: center;
 }
