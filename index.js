@@ -22,6 +22,32 @@ async function main() {
   initializeApp(firebaseConfig);
 
   db = getFirestore();
-}
 
+  // Define the song details
+const song = {
+  title: document.getElementById("card-title"),
+  artist: document.getElementById("card-text"),
+  image: document.getElementById("card-img-top"),
+  audio: "https://firebasestorage.googleapis.com/v0/b/skull-candy-48fae.appspot.com/o/Naruto%20OST.mp3?alt=media&token=e5ecbd6d-0d15-4110-890d-866d444f8ef4"
+};
+
+// Get the DOM elements
+const playButton = document.getElementById("playbutton");
+const audioPlayer = document.getElementById("audioplayer");
+const songImage = document.getElementById("song-image");
+const songTitle = document.getElementById("song-title");
+const artistName = document.getElementById("artist-name");
+
+// Set the song details
+songImage.src = song.image;
+songTitle.textContent = song.title;
+artistName.textContent = song.artist;
+audioPlayer.src = song.audio;
+
+// Add an event listener to the play button
+playButton.addEventListener("click", () => {
+  audioPlayer.play();
+});  
+}
 main();
+ 

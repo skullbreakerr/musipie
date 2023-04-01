@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
 
-
 body {
-  background-color:  #1f1f1f;
-} 
+  background-color: #1f1f1f;
+}
 #head {
   font-family: 'Chewy', cursive;
   font-size: xx-large;
@@ -12,12 +11,12 @@ body {
   display: flex;
   width: 100%;
 }
-#main{
-  transition: margin-left 0.5s; 
+#main {
+  transition: margin-left 0.5s;
 }
-.sidebar{
-  height:100%;
-  width:0;
+.sidebar {
+  height: 100%;
+  width: 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -27,26 +26,30 @@ body {
   transition: 0.5s;
   background-color: #1f1f1f;
 }
-.sidebar itm{
-  padding:8px 8px 8px 32px;
+.sidebar itm {
+  padding: 8px 8px 8px 32px;
   display: block;
   text-decoration: none;
   font-size: 25px;
   color: white;
   transition: 0.2s;
 }
-#border{
+#border {
   border: solid 1px;
   border-top: #ffffff;
   border-bottom: #ffffff;
 }
-.sidebar itm:hover{
+.sidebar itm:hover {
   color: rgba(149, 47, 245, 0.877);
 }
 
 @media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
 }
 
 .vr {
@@ -63,13 +66,13 @@ body {
   border: 1px solid #1f1f1f;
   text-align: center;
 }
-a.btn{
+a.btn {
   border-radius: 50px;
   border-style: ridge;
   background-color: rgba(149, 47, 245, 0.877);
   color: white;
 }
-a.btn:hover{
+a.btn:hover {
   color: #1f1f1f;
   border-color: rgba(149, 47, 245, 0.877);
 }
@@ -94,7 +97,7 @@ div ul {
   margin-left: 14px;
 }
 
-div .bg{
+div .bg {
   border-radius: 12px;
   background-color: rgba(149, 47, 245, 0.877);
   color: #ffffff;
@@ -104,13 +107,12 @@ div .bg{
   margin-top: auto;
 }
 
-#card-container img{
+#card-container img {
   height: 300px;
-  width: max; 
-
+  width: max;
 }
 
-.line{
+.line {
   color: white;
   height: 2px;
 }
@@ -118,31 +120,124 @@ div .bg{
   width: 100px;
   height: 100px;
   background-image: url('https://firebasestorage.googleapis.com/v0/b/skull-candy-48fae.appspot.com/o/logo.png?alt=media&token=e28cd3c6-39e4-4f4d-b07f-8b8824d173df');
+  animation: logoHover 3s infinite;
   transition: transform 0.5s ease;
 }
 
-.logo:hover{
-  transform: rotate3d(0,1,0,360deg);
+.logo:hover {
+  animation:logo3d 2s infinite;
 }
- 
-#dev{
+@keyframes logo3d{
+  0%{
+    transform: rotate3d(0,1,0,360deg);
+  } 
+  25%{
+    transform: rotate3d(0,1,0,720deg);
+  }
+    
+   
+}
+@keyframes logoHover{
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(20deg);
+  }
+  75%{
+    transform: rotate(-30deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+#dev {
   margin-top: 25px;
   text-align: center;
   color: green;
   font-family: 'Rubik Iso', cursive;
 }
 
-.down{
-   padding-top: 90%;
+.down {
+  padding-top: 90%;
 }
- 
-div img{
+
+div img {
   height: 150px;
   width: 150px;
-  object-fit:cover;
+  object-fit: cover;
 }
-.card{
+.card {
   height: 300px;
   width: 250px;
   margin: auto;
+}
+
+/* music panel */
+
+.musicpanel {
+  height: 70px;
+  width: 80%;
+  margin: auto;
+  color: white;
+  background-color: rgba(149, 47, 245, 0.877);
+  border-radius: 50px;
+  position: fixed;
+  bottom: 10px;
+  left: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.music-info {
+  display: flex;
+  align-items: center;
+
+}
+
+.music-info img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  margin-left: -10px;
+  border-radius: 50px;
+}
+
+.song-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.song-title {
+  margin: 0;
+  font-size: 12px;
+}
+
+.artist-name {
+  margin: 0;
+  font-size: 10px;
+}
+
+.playButton {
+  border-radius: 50px;
+  border: 0;
+  color: white;
+  margin-left: 3px;
+  background-color: rgba(149, 47, 245, 0.877);
+  align-self: center;
+}
+.playButton:hover {
+  color: rgba(149, 47, 245, 0.877);
+  background-color:white;
+}
+
+audio {
+  width: 200px;
+  margin-left: 20px;
+}
+
+audio::-webkit-media-controls {
+  display: none;
 }
