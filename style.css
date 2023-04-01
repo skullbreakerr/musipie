@@ -68,7 +68,6 @@ body {
 }
 a.btn {
   border-radius: 50px;
-  border-style: ridge;
   background-color: rgba(149, 47, 245, 0.877);
   color: white;
 }
@@ -77,8 +76,6 @@ a.btn:hover {
   border-color: rgba(149, 47, 245, 0.877);
 }
 .btn:hover {
-  border-radius: 15px;
-  border-style: ridge;
   border-color: rgba(149, 47, 245, 0.877);
   color: #1f1f1f;
   transition: 1s;
